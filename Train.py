@@ -110,7 +110,7 @@ class Train_And_Test:
             elif maxResult < s:
                 maxResult = s
                 maxC = i
-        print("accuracy is : " + maxResult)
+        print("accuracy is : " + str(maxResult))
         # create the best model and saving it
         self.model = SVC(kernel="rbf", C=maxC)
         self.model.fit(self.TrainX, self.TrainY)
